@@ -1,5 +1,5 @@
 # vehicleSpecReturn
-python command line program
+
 You need to already have an API key from Edmunds.com for this program to function.
 And be sure to install the python wrapper for the edmunds api which is pip install edmunds as noted in requirements.txt.
 I was using Python 2.7.6 for development but should work with most Python versions.
