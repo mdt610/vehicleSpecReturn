@@ -88,8 +88,6 @@ if not mk_mdl_yr['styles']:
 
 #car['styleid'], car['trim'] = get_style_id()
 
-print "***** %s ******" % car
-
 while 'styleid' not in car:
     try:
         car['styleid'], car['trim'] = get_style_id()
