@@ -1,4 +1,5 @@
 # vehicleSpecReturn
+Run the program by typing this in your console: python runme.py
 
 You need to already have an API key from Edmunds.com for this program to function.
 And be sure to install the python wrapper for the edmunds api which is pip install edmunds as noted in requirements.txt.

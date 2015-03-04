@@ -1,7 +1,5 @@
 import sys
 from edmunds.edmunds import Edmunds
-from pprint import pprint
-import json
 
 DEBUG = False
 
@@ -72,12 +70,13 @@ else:
 
 mk_mdl_yr = api.make_call('/api/vehicle/v2/{0}/{1}/{2}?state=new'.format(car['make'], car['model'], car['year']))
 
+
 def get_style_id():
     for style in mk_mdl_yr['styles']:
         print "\n*** {0} {1} {2} {3} ***".format(car['year'], car['make'], car['model'], style['name'])
         x = raw_input("Is this the car you are looking for? (Y) or (N): ").lower().strip()
         if 'y' in x:
-	    return style['id'], style['trim']
+            return style['id'], style['trim']
         else:
             continue
 
